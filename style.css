@@ -1,0 +1,153 @@
+/* Configurações Gerais para facilitar a leitura */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fontes limpas e fáceis de ler */
+    background-color: #f7f9fc;
+    color: #1a1a1a; /* Alto contraste */
+    line-height: 1.6;
+    font-size: 20px; /* Fonte maior que o padrão para facilitar a visão */
+}
+
+/* Barra do Topo */
+.barra-topo {
+    background-color: #6e5c01; /* Azul escuro seguro */
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 5px solid #002244;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.acessibilidade small {
+    font-size: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Conteúdo Principal */
+.conteudo-principal {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.boas-vindas {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.boas-vindas h1 {
+    font-size: 2.2rem;
+    color: #004481;
+    margin-bottom: 15px;
+}
+
+/* Cartões das Lições */
+.lista-licoes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Espaço generoso entre os elementos */
+}
+
+.cartao-licao {
+    background-color: #ffffff;
+    border: 3px solid #cccccc; /* Bordas bem marcadas */
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.icone-licao {
+    font-size: 3rem; /* Ícones grandes */
+    padding: 10px;
+    background-color: #e6f0fa;
+    border-radius: 50%;
+}
+
+.texto-licao h2 {
+    font-size: 1.6rem;
+    color: #004481;
+    margin-bottom: 10px;
+}
+
+.texto-licao p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* Botões Grandes e Fáceis de Clicar */
+.botao-leitura {
+    background-color: #28a745; /* Verde para dar ideia de "seguir/seguro" */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%; /* Ocupa toda a largura no celular para facilitar o toque */
+    max-width: 300px;
+    border-bottom: 4px solid #1e7e34; /* Efeito 3D para parecer clicável */
+}
+
+.botao-leitura:hover, .botao-leitura:focus {
+    background-color: #218838;
+    outline: 4px solid #ffc107; /* Destaque visual ao passar o mouse ou focar com o teclado */
+}
+
+/* Seção de Alerta/Ajuda */
+.ajuda-rapida {
+    margin-top: 40px;
+    background-color: #fff3cd; /* Amarelo de atenção suave */
+    border: 3px solid #ffeeba;
+    border-left: 10px solid #ffc107; /* Destaque na lateral */
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.ajuda-rapida h2 {
+    color: #856404;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #343a40;
+    color: #ffffff;
+    margin-top: 50px;
+    font-size: 1rem;
+}
+
+/* Ajustes para telas menores (Celulares) */
+@media (max-width: 600px) {
+    .cartao-licao {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .botao-leitura {
+        max-width: 100%;
+    }
+}
